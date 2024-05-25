@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <h1>Página de Cadastro</h1>
+    <hr>
+    <form action="{{ url_for('cadastro')}}" method="post">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="name" id="name" placeholder="Escreva seu nome"></td>
+            </tr>
+            <tr>
+                <td>Telefone:</td>
+                <td><input type="text" name="phone" id="phone" placeholder="Escreva seu telefone"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" id="email" placeholder="Escreva seu email"></td>
+            </tr>
+            <tr>
+                <td>CPF:</td>
+                <td><input type="text" name="cpf" id="cpf" placeholder="Escreva seu CPF"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="cadastro">
+    </form>
+    <br>
+    <a href="/index">voltar</a>
+</body>
+</html>

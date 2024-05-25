@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editar informações</title>
+</head>
+<body>
+    <h1>Editar informações</h1>
+    <hr>
+     <form action="" method="post">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="name" id="name" value="{{ person.name }}"></td>
+            </tr>
+            <tr>
+                <td>Telefone:</td>
+                <td><input type="text" name="phone" id="phone" value="{{ person.phone }}"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" id="email" value="{{ person.email }}"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="atualizar dados">
+    </form>
+
+</body>
+</html>
